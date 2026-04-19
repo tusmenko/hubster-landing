@@ -1,0 +1,12 @@
+{
+	"name": "hubster-landing",
+	"private": true,
+	"scripts": {
+		"build:css": "tailwindcss -i ./src/input.css -o ./styles.css --minify",
+		"watch:css": "tailwindcss -i ./src/input.css -o ./styles.css --watch"
+	},
+	"devDependencies": {
+		"@tailwindcss/cli": "^4.1.4",
+		"tailwindcss": "^4.1.4"
+	}
+}

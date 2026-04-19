@@ -1,0 +1,94 @@
+@import "tailwindcss";
+@source "../index.html";
+
+@theme {
+	--font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+	--font-serif: "Cardo", ui-serif, Georgia, "Times New Roman", serif;
+	--color-canvas: #f9f9f9;
+	--color-surface: #ffffff;
+	--color-ink: #111111;
+	--color-muted: #636363;
+	--color-line: #a4a4a4;
+}
+
+@layer components {
+	.skip-link {
+		@apply sr-only;
+	}
+
+	.skip-link:focus {
+		@apply not-sr-only fixed left-2 top-2 z-[100001] m-0 block w-auto overflow-visible rounded border-0 bg-neutral-200 px-4 py-3 text-base font-normal text-neutral-900 shadow-md no-underline;
+		clip: auto;
+		white-space: normal;
+		height: auto;
+		padding-top: 0.75rem;
+		padding-bottom: 0.75rem;
+	}
+
+	.heading-asterisk {
+		@apply m-0 text-center font-serif text-3xl font-normal leading-tight text-ink sm:text-4xl lg:text-[2.5rem];
+	}
+
+	.heading-asterisk.heading-asterisk--left {
+		@apply text-left font-sans text-lg font-semibold sm:text-xl;
+	}
+
+	.heading-asterisk.heading-asterisk--left::before {
+		margin-left: 0;
+		margin-right: auto;
+	}
+
+	.heading-asterisk.heading-asterisk--section {
+		@apply text-left font-serif text-2xl font-normal sm:text-3xl;
+	}
+
+	.heading-asterisk.heading-asterisk--section::before {
+		margin-left: 0;
+		margin-right: auto;
+	}
+
+	.heading-asterisk::before {
+		content: "";
+		width: 1.5rem;
+		height: 3rem;
+		background: var(--color-muted);
+		clip-path: path(
+			"M11.93.684v8.039l5.633-5.633 1.216 1.23-5.66 5.66h8.04v1.737H13.2l5.701 5.701-1.23 1.23-5.742-5.742V21h-1.737v-8.094l-5.77 5.77-1.23-1.217 5.743-5.742H.842V9.98h8.162l-5.701-5.7 1.23-1.231 5.66 5.66V.684h1.737Z"
+		);
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 0.75rem;
+	}
+
+	.heading-asterisk:empty::before {
+		content: none;
+	}
+
+	.list-checkmark {
+		@apply m-0 list-none space-y-2 p-0 leading-[1.75];
+	}
+
+	.list-checkmark li {
+		@apply relative pl-6;
+	}
+
+	.list-checkmark li::before {
+		content: "\2713";
+		@apply absolute left-0;
+	}
+
+	.nav-mobile-panel {
+		@apply invisible fixed inset-0 z-[100000] flex flex-col bg-surface p-6 opacity-0 transition-opacity duration-100 ease-out;
+		pointer-events: none;
+	}
+
+	.nav-mobile-panel.nav-open {
+		@apply visible opacity-100;
+		pointer-events: auto;
+	}
+
+	.btn-primary {
+		@apply inline-flex cursor-pointer items-center justify-center rounded-full border-0 bg-ink px-6 py-2.5 text-sm font-medium text-canvas no-underline transition-colors hover:bg-muted focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink;
+	}
+}

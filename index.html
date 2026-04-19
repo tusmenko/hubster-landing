@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,415 +13,199 @@
 <link rel="icon" href="assets/hub_logo02-1.png" sizes="192x192">
 <link rel="apple-touch-icon" href="assets/hub_logo02-1.png">
 </head>
-<body>
-<a class="skip-link screen-reader-text" href="#main-content">Skip to content</a>
-<div class="wp-site-blocks"><header class="wp-block-template-part">
-<div class="wp-block-group alignfull has-contrast-color has-text-color has-background has-link-color wp-elements-5c62ad605e3a068bfa72256703c26346 has-global-padding is-layout-constrained wp-container-core-group-is-layout-23b1a4dc wp-block-group-is-layout-constrained" style="background:linear-gradient(0deg,rgb(232,237,240) 0%,rgb(238,230,255) 100%);padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)">
-<div class="wp-block-group alignwide is-content-justification-space-between is-layout-flex wp-container-core-group-is-layout-b585a4aa wp-block-group-is-layout-flex">
-<div class="wp-block-group is-layout-flex wp-container-core-group-is-layout-7a92790e wp-block-group-is-layout-flex"><div class="is-default-size wp-block-site-logo"><a href="/" class="custom-logo-link" rel="home" aria-current="page"><img width="160" height="160" src="assets/hub_logo02-1.png" class="custom-logo" alt="hubster — IT Services and IT Consulting" decoding="async"></a></div></div>
+<body class="bg-canvas font-sans text-[1.05rem] leading-relaxed text-ink antialiased">
+<a class="skip-link" href="#main-content">Skip to content</a>
 
-
-<nav style="font-style:normal;font-weight:600;" class="has-medium-font-size is-responsive items-justified-right wp-block-navigation is-content-justification-right is-layout-flex wp-container-core-navigation-is-layout-f665d2b5 wp-block-navigation-is-layout-flex" aria-label="Navigation"><button type="button" aria-haspopup="dialog" aria-label="Open menu" aria-expanded="false" aria-controls="modal-1" class="wp-block-navigation__responsive-container-open"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7.5h16v1.5H4z"></path><path d="M4 15h16v1.5H4z"></path></svg></button>
-				<div class="wp-block-navigation__responsive-container" id="modal-1" tabindex="-1">
-					<div class="wp-block-navigation__responsive-close" tabindex="-1">
-						<div class="wp-block-navigation__responsive-dialog">
-							<button type="button" aria-label="Close menu" class="wp-block-navigation__responsive-container-close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="m13.06 12 6.47-6.47-1.06-1.06L12 10.94 5.53 4.47 4.47 5.53 10.94 12l-6.47 6.47 1.06 1.06L12 13.06l6.47 6.47 1.06-1.06L13.06 12Z"></path></svg></button>
-							<div class="wp-block-navigation__responsive-container-content" id="modal-1-content">
-								<ul style="font-style:normal;font-weight:600;" class="wp-block-navigation__container has-medium-font-size is-responsive items-justified-right wp-block-navigation has-medium-font-size"><li class="has-medium-font-size wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="#about-us"><span class="wp-block-navigation-item__label">About Us</span></a></li><li class="has-medium-font-size wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="#contact-us"><span class="wp-block-navigation-item__label">Contact Us</span></a></li></ul>
-							</div>
-						</div>
-					</div>
-				</div></nav></div>
-</div>
+<header class="bg-gradient-to-b from-[#e8edf0] to-[#eee6ff] px-5 py-6 sm:px-8">
+	<div class="mx-auto flex max-w-7xl items-center justify-between gap-6">
+		<a href="/" class="inline-block leading-none" aria-current="page">
+			<img src="assets/hub_logo02-1.png" width="160" height="160" alt="hubster — IT Services and IT Consulting" decoding="async" class="h-auto w-28 max-w-[120px] sm:w-32 md:w-40">
+		</a>
+		<nav class="text-lg font-semibold" aria-label="Navigation" id="site-nav">
+			<ul class="m-0 hidden list-none items-center gap-8 p-0 md:flex">
+				<li><a href="#about-us" class="text-inherit no-underline hover:underline">About Us</a></li>
+				<li><a href="#contact-us" class="text-inherit no-underline hover:underline">Contact Us</a></li>
+			</ul>
+			<button type="button" id="nav-menu-open" class="inline-flex rounded border-0 bg-transparent p-1 text-ink md:hidden" aria-haspopup="dialog" aria-expanded="false" aria-controls="nav-menu-panel" aria-label="Open menu">
+				<svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" class="block"><path fill="currentColor" d="M4 7.5h16v1.5H4z"></path><path fill="currentColor" d="M4 15h16v1.5H4z"></path></svg>
+			</button>
+			<div id="nav-menu-panel" class="nav-mobile-panel md:hidden" tabindex="-1" aria-modal="true" role="dialog" aria-label="Menu">
+				<div class="relative flex w-full max-w-7xl flex-1 flex-col">
+					<button type="button" id="nav-menu-close" class="absolute right-0 top-0 z-[2] inline-flex rounded border-0 bg-transparent p-2 text-ink" aria-label="Close menu">
+						<svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" class="block"><path fill="currentColor" d="m13.06 12 6.47-6.47-1.06-1.06L12 10.94 5.53 4.47 4.47 5.53 10.94 12l-6.47 6.47 1.06 1.06L12 13.06l6.47 6.47 1.06-1.06L13.06 12Z"></path></svg>
+					</button>
+					<ul class="m-0 mt-14 flex list-none flex-col gap-6 p-0 text-lg font-semibold">
+						<li><a href="#about-us" class="text-inherit no-underline hover:underline">About Us</a></li>
+						<li><a href="#contact-us" class="text-inherit no-underline hover:underline">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
 </header>
 
-
-<main class="wp-block-group is-layout-flow wp-container-core-group-is-layout-bb62f62d wp-block-group-is-layout-flow" style="margin-top:0" id="main-content">
-<div class="wp-block-group alignfull has-global-padding is-layout-constrained wp-container-core-group-is-layout-490fa1db wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
-<div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-650790e1 wp-block-group-is-layout-constrained">
-<h1 class="wp-block-heading has-text-align-center has-x-large-font-size">A commitment to innovation and sustainability</h1>
-
-
-
-<div style="height:1.25rem" aria-hidden="true" class="wp-block-spacer"></div>
-
-
-
-<p class="has-text-align-center">We combine consulting and technology to create outstanding IT solutions for our clients — from backend integration solutions, through process digitalization to innovative business models.</p>
-
-
-
-<div style="height:1.25rem" aria-hidden="true" class="wp-block-spacer"></div>
-
-
-
-<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-a89b3969 wp-block-buttons-is-layout-flex">
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#about-us">About us</a></div>
-</div>
-</div>
-
-
-
-<div style="height:var(--wp--preset--spacing--30)" aria-hidden="true" class="wp-block-spacer"></div>
-
-
-
-<figure class="wp-block-image alignwide size-full is-style-rounded is-style-rounded--2"><img width="626" height="352" src="assets/modern-office-workers-collaborate-data-analysis-cityscape_1305385-69414.avif" alt="" class="wp-image-38"></figure>
-</div>
-
-
-
-<div class="wp-block-group alignfull has-base-2-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-669513ed wp-block-group-is-layout-constrained" id="about-us" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
-<div class="wp-block-group is-vertical is-content-justification-center is-layout-flex wp-container-core-group-is-layout-52b864f0 wp-block-group-is-layout-flex">
-<h2 class="wp-block-heading has-text-align-center is-style-asterisk">Hubster – Your Partner in Digital Excellence</h2>
-
-
-
-<div style="height:0px" aria-hidden="true" class="wp-block-spacer wp-container-content-4f2ccadb"></div>
-
-
-
-<p class="has-text-align-center">At the intersection of human potential and digital innovation, we<br>transform businesses into adaptive, future-ready powerhouses.</p>
-
-
-
-<p class="has-text-align-center">.</p>
-</div>
-
-
-
-<div style="margin-top:0;margin-bottom:0;height:var(--wp--preset--spacing--40)" aria-hidden="true" class="wp-block-spacer"></div>
-
-
-
-<div class="wp-block-columns alignwide is-layout-flex wp-container-core-columns-is-layout-d0bbbce0 wp-block-columns-is-layout-flex">
-<div class="wp-block-column is-layout-flow wp-container-core-column-is-layout-e3d1c41b wp-block-column-is-layout-flow">
-<h3 class="wp-block-heading has-text-align-left is-style-asterisk has-body-font-family has-medium-font-size" style="font-style:normal;font-weight:600">Custom Development</h3>
-
-
-
-<p class="has-text-align-left">We don’t just build software — we craft bespoke solutions designed to solve your unique business challenges.</p>
-
-
-
-<p class="has-text-align-left"></p>
-</div>
-
-
-
-<div class="wp-block-column is-layout-flow wp-container-core-column-is-layout-e3d1c41b wp-block-column-is-layout-flow">
-<h3 class="wp-block-heading has-text-align-left is-style-asterisk has-body-font-family has-medium-font-size" style="font-style:normal;font-weight:600">Cloud Solutions</h3>
-
-
-
-<p class="has-text-align-left">Scalable, flexible, and built for the future. Our cloud infrastructure adapts to your needs, enhancing efficiency at every turn.</p>
-
-
-
-<p class="has-text-align-left"></p>
-</div>
-
-
-
-<div class="wp-block-column is-layout-flow wp-container-core-column-is-layout-e3d1c41b wp-block-column-is-layout-flow">
-<h3 class="wp-block-heading has-text-align-left is-style-asterisk has-body-font-family has-medium-font-size" style="font-style:normal;font-weight:600">IT Consulting</h3>
-
-
-
-<p class="has-text-align-left">More than advice-strategic insights that revolutionize your tech stack and streamline your processes.</p>
-
-
-
-<p class="has-text-align-left"></p>
-</div>
-</div>
-
-
-
-<div style="height:var(--wp--preset--spacing--20)" aria-hidden="true" class="wp-block-spacer"></div>
-
-
-
-<div class="wp-block-columns alignwide is-layout-flex wp-container-core-columns-is-layout-d0bbbce0 wp-block-columns-is-layout-flex">
-<div class="wp-block-column is-layout-flow wp-container-core-column-is-layout-e3d1c41b wp-block-column-is-layout-flow">
-<h3 class="wp-block-heading has-text-align-left is-style-asterisk has-body-font-family has-medium-font-size" style="font-style:normal;font-weight:600">Cybersecurity</h3>
-
-
-
-<p class="has-text-align-left">Protecting your most valuable asset: your data. Our approach to security is as comprehensive as it is uncompromising.</p>
-
-
-
-<p class="has-text-align-left"></p>
-</div>
-
-
-
-<div class="wp-block-column is-layout-flow wp-container-core-column-is-layout-e3d1c41b wp-block-column-is-layout-flow">
-<h3 class="wp-block-heading has-text-align-left is-style-asterisk has-body-font-family has-medium-font-size" style="font-style:normal;font-weight:600">System Integration</h3>
-
-
-
-<p class="has-text-align-left">Tools and platforms working together seamlessly. Enhanced performance, simplified operations-just as it should be.</p>
-
-
-
-<p class="has-text-align-left"></p>
-</div>
-
-
-
-<div class="wp-block-column is-layout-flow wp-container-core-column-is-layout-e3d1c41b wp-block-column-is-layout-flow">
-<h3 class="wp-block-heading has-text-align-left is-style-asterisk has-body-font-family has-medium-font-size" style="font-style:normal;font-weight:600">Architectural Solutions</h3>
-
-
-
-<p class="has-text-align-left">Experience the fusion of imagination and expertise with Hubster Architectural Solutions.</p>
-</div>
-</div>
-</div>
-
-
-
-<div class="wp-block-group alignfull has-global-padding is-layout-constrained wp-container-core-group-is-layout-d89aad35 wp-block-group-is-layout-constrained" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
-<div class="wp-block-group alignwide has-global-padding is-layout-constrained wp-container-core-group-is-layout-19e250f3 wp-block-group-is-layout-constrained">
-<div class="wp-block-group is-vertical is-content-justification-center is-layout-flex wp-container-core-group-is-layout-6329a8f3 wp-block-group-is-layout-flex">
-<h2 class="wp-block-heading has-text-align-center is-style-asterisk">We’re shaping the future</h2>
-
-
-
-<p class="has-text-align-center">We don’t just offer solutions — we inspire growth, fuel creativity, and lay<br>the digital foundations for a more connected, sustainable future.</p>
-</div>
-
-
-
-<div style="height:var(--wp--preset--spacing--40)" aria-hidden="true" class="wp-block-spacer"></div>
-
-
-
-<div class="wp-block-columns alignwide is-layout-flex wp-container-core-columns-is-layout-d1c656ed wp-block-columns-is-layout-flex">
-<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:40%">
-<h3 class="wp-block-heading is-style-asterisk">Values</h3>
-
-
-
-<ul style="line-height:1.75" class="wp-block-list is-style-checkmark-list">
-<li>Relentless Curiosity. </li>
-
-
-
-<li>Fearless Agility.</li>
-
-
-
-<li>Empowered Creativity.</li>
-
-
-
-<li>Human-Centered Technology.</li>
-
-
-
-<li>Purpose-Driven Progress.</li>
-</ul>
-</div>
-
-
-
-<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:50%">
-<figure class="wp-block-image size-full is-style-rounded is-style-rounded--3"><img width="626" height="352" src="assets/computer-screen-with-cartoon-image-three-men-room-with-blue-background_66778-11504.jpg" alt="" class="wp-image-40"></figure>
-</div>
-</div>
-
-
-
-<div style="height:var(--wp--preset--spacing--40)" aria-hidden="true" class="wp-block-spacer"></div>
-
-
-
-<div class="wp-block-columns alignwide is-layout-flex wp-container-core-columns-is-layout-d1c656ed wp-block-columns-is-layout-flex">
-<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:50%">
-<figure class="wp-block-image size-full is-style-rounded is-style-rounded--4"><img width="900" height="504" src="assets/back-view-young-multicultural-businesspeople-working-modern-office-interior-teamwork-brai_1308175-18401.jpg" alt="" class="wp-image-41"></figure>
-</div>
-
-
-
-<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:40%">
-<h3 class="wp-block-heading is-style-asterisk">Advantages</h3>
-
-
-
-<ul style="line-height:1.75" class="wp-block-list is-style-checkmark-list">
-<li>Cross-Industry Expertise.</li>
-
-
-
-<li>Data-Driven Decision-Making.</li>
-
-
-
-<li>Employee Empowerment.</li>
-
-
-
-<li>Sustainable Practices.</li>
-
-
-
-<li>Community Engagement.</li>
-
-
-
-<li>Focus on User Experience (UX).</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-
-
-
-<div class="wp-block-group alignfull has-base-color has-text-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-ef3d885c wp-block-group-is-layout-constrained" style="background:linear-gradient(0deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--60)">
-<div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
-<p class="has-text-align-center has-base-color has-text-color has-heading-font-family has-x-large-font-size" style="line-height:1.2">At HUBSTER, relationships matter. </p>
-
-
-
-<p class="has-text-align-center">We build long-term partnerships rooted in trust and collaboration, always keeping our clients’ goals at the heart of what we do. Our commitment is to provide solutions that work seamlessly, driving measurable results and helping businesses thrive in an ever-changing digital world.</p>
-
-
-
-<p class="has-text-align-center has-base-color has-text-color has-heading-font-family has-x-large-font-size" style="line-height:1.2"></p>
-</div>
-</div>
-
-
-
-<div class="wp-block-group alignfull has-global-padding is-layout-constrained wp-container-core-group-is-layout-669513ed wp-block-group-is-layout-constrained" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
-<div class="wp-block-group is-vertical is-content-justification-center is-layout-flex wp-container-core-group-is-layout-1eeb43da wp-block-group-is-layout-flex" style="margin-top:0;margin-bottom:0;padding-top:0;padding-bottom:0">
-<h2 class="wp-block-heading has-text-align-center is-style-asterisk has-x-large-font-size">Our greatest asset is our people</h2>
-
-
-
-<p class="has-text-align-center">We’re always seeking passionate individuals who share our vision and are<br>eager to contribute to our mission.</p>
-
-
-
-<p class="has-text-align-center">Our dynamic team of experts-from software developers to project managers–drivers innovation and success.</p>
-
-
-
-<p class="has-text-align-center">We cultivate a collaborative environment that values creativity and continuous learning, empowering us to tackle complex challenges and deliver exceptional results.</p>
-
-
-
-<h2 class="wp-block-heading has-text-align-center is-style-default has-x-large-font-size">Meet our team!</h2>
-</div>
-</div>
-
-
-
-<div class="wp-block-group alignfull has-global-padding is-layout-constrained wp-container-core-group-is-layout-d89aad35 wp-block-group-is-layout-constrained" id="contact-us" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
-<div class="wp-block-group alignwide has-base-2-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-39412042 wp-block-group-is-layout-constrained" style="border-radius:16px;padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--50)">
-<div style="height:var(--wp--preset--spacing--10)" aria-hidden="true" class="wp-block-spacer"></div>
-
-
-
-<h2 class="wp-block-heading has-text-align-center has-x-large-font-size">Your journey starts here!</h2>
-
-
-
-<p class="has-text-align-center">Join us as we shape the future of technology together.&nbsp;</p>
-
-
-
-<!-- <pre class="wp-block-verse has-border-color has-contrast-3-border-color" style="border-width:1px">Email</pre> -->
-
-
-
-<!-- <pre class="wp-block-verse has-border-color has-contrast-3-border-color" style="border-width:1px">Name</pre> -->
-
-
-
-<!--- <pre class="wp-block-verse has-border-color has-contrast-3-border-color" style="border-width:1px">Your message<br><br></pre> -->
-
-<form id="contact-form" class="contact-form" novalidate>
-<p id="contact-form-status" class="contact-form__status" role="status" aria-live="polite"></p>
-<div class="contact-form__field">
-<label class="contact-form__label screen-reader-text" for="contact-name">Your name</label>
-<input class="contact-form__input" type="text" id="contact-name" name="name" autocomplete="name" placeholder="Your name" aria-describedby="contact-name-error">
-<span id="contact-name-error" class="contact-form__error" role="alert"></span>
-</div>
-<div class="contact-form__field">
-<label class="contact-form__label screen-reader-text" for="contact-email">Your email</label>
-<input class="contact-form__input" type="email" id="contact-email" name="email" autocomplete="email" placeholder="Your email" aria-describedby="contact-email-error">
-<span id="contact-email-error" class="contact-form__error" role="alert"></span>
-</div>
-<div class="contact-form__field">
-<label class="contact-form__label screen-reader-text" for="contact-message">Your message</label>
-<textarea class="contact-form__input contact-form__textarea" id="contact-message" name="message" rows="4" placeholder="Your message" aria-describedby="contact-message-error"></textarea>
-<span id="contact-message-error" class="contact-form__error" role="alert"></span>
-</div>
-<button class="contact-form__submit wp-block-button__link wp-element-button" type="submit">Submit</button>
-</form>
-
-
-
-<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-a89b3969 wp-block-buttons-is-layout-flex">
-<!-- <div class="wp-block-button"><a class="wp-block-button__link wp-element-button">Submit</a></div> -->
-</div>
-
-
-
-<div style="height:var(--wp--preset--spacing--10)" aria-hidden="true" class="wp-block-spacer"></div>
-</div>
-</div>
+<main id="main-content">
+	<section class="px-5 py-12 sm:px-8 sm:py-16 lg:px-16 lg:py-24">
+		<div class="mx-auto max-w-[565px] text-center">
+			<h1 class="font-serif text-3xl font-normal leading-tight text-ink sm:text-4xl lg:text-5xl">A commitment to innovation and sustainability</h1>
+			<div class="h-5" aria-hidden="true"></div>
+			<p class="m-0">We combine consulting and technology to create outstanding IT solutions for our clients — from backend integration solutions, through process digitalization to innovative business models.</p>
+			<div class="h-5" aria-hidden="true"></div>
+			<div class="flex justify-center">
+				<a class="btn-primary" href="#about-us">About us</a>
+			</div>
+		</div>
+		<div class="h-8 sm:h-10" aria-hidden="true"></div>
+		<figure class="mx-auto max-w-5xl">
+			<img src="assets/modern-office-workers-collaborate-data-analysis-cityscape_1305385-69414.avif" width="626" height="352" alt="" class="h-auto w-full rounded-3xl object-cover">
+		</figure>
+	</section>
+
+	<section id="about-us" class="bg-surface px-5 py-12 sm:px-8 sm:py-16 lg:px-16 lg:py-24">
+		<div class="mx-auto max-w-5xl">
+			<div class="mx-auto max-w-3xl text-center">
+				<h2 class="heading-asterisk">Hubster – Your Partner in Digital Excellence</h2>
+				<p class="mt-6">At the intersection of human potential and digital innovation, we<br>transform businesses into adaptive, future-ready powerhouses.</p>
+			</div>
+			<div class="h-10 sm:h-12" aria-hidden="true"></div>
+			<div class="grid gap-10 md:grid-cols-3 md:gap-8">
+				<div>
+					<h3 class="heading-asterisk heading-asterisk--left">Custom Development</h3>
+					<p class="mt-3 text-left">We don’t just build software — we craft bespoke solutions designed to solve your unique business challenges.</p>
+				</div>
+				<div>
+					<h3 class="heading-asterisk heading-asterisk--left">Cloud Solutions</h3>
+					<p class="mt-3 text-left">Scalable, flexible, and built for the future. Our cloud infrastructure adapts to your needs, enhancing efficiency at every turn.</p>
+				</div>
+				<div>
+					<h3 class="heading-asterisk heading-asterisk--left">IT Consulting</h3>
+					<p class="mt-3 text-left">More than advice-strategic insights that revolutionize your tech stack and streamline your processes.</p>
+				</div>
+			</div>
+			<div class="h-8" aria-hidden="true"></div>
+			<div class="grid gap-10 md:grid-cols-3 md:gap-8">
+				<div>
+					<h3 class="heading-asterisk heading-asterisk--left">Cybersecurity</h3>
+					<p class="mt-3 text-left">Protecting your most valuable asset: your data. Our approach to security is as comprehensive as it is uncompromising.</p>
+				</div>
+				<div>
+					<h3 class="heading-asterisk heading-asterisk--left">System Integration</h3>
+					<p class="mt-3 text-left">Tools and platforms working together seamlessly. Enhanced performance, simplified operations-just as it should be.</p>
+				</div>
+				<div>
+					<h3 class="heading-asterisk heading-asterisk--left">Architectural Solutions</h3>
+					<p class="mt-3 text-left">Experience the fusion of imagination and expertise with Hubster Architectural Solutions.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="px-5 py-12 sm:px-8 sm:py-16 lg:px-16 lg:py-24">
+		<div class="mx-auto max-w-5xl">
+			<div class="mx-auto max-w-3xl text-center">
+				<h2 class="heading-asterisk">We’re shaping the future</h2>
+				<p class="mt-6">We don’t just offer solutions — we inspire growth, fuel creativity, and lay<br>the digital foundations for a more connected, sustainable future.</p>
+			</div>
+			<div class="h-10 sm:h-12" aria-hidden="true"></div>
+			<div class="flex flex-col gap-10 lg:flex-row lg:items-center lg:gap-16">
+				<div class="lg:w-[40%]">
+					<h3 class="heading-asterisk heading-asterisk--section">Values</h3>
+					<ul class="list-checkmark mt-4">
+						<li>Relentless Curiosity.</li>
+						<li>Fearless Agility.</li>
+						<li>Empowered Creativity.</li>
+						<li>Human-Centered Technology.</li>
+						<li>Purpose-Driven Progress.</li>
+					</ul>
+				</div>
+				<div class="lg:w-[50%]">
+					<img src="assets/computer-screen-with-cartoon-image-three-men-room-with-blue-background_66778-11504.jpg" width="626" height="352" alt="" class="h-auto w-full rounded-3xl object-cover">
+				</div>
+			</div>
+			<div class="h-10 sm:h-12" aria-hidden="true"></div>
+			<div class="flex flex-col gap-10 lg:flex-row lg:items-center lg:gap-16">
+				<div class="order-2 lg:order-1 lg:w-[50%]">
+					<img src="assets/back-view-young-multicultural-businesspeople-working-modern-office-interior-teamwork-brai_1308175-18401.jpg" width="900" height="504" alt="" class="h-auto w-full rounded-3xl object-cover">
+				</div>
+				<div class="order-1 lg:order-2 lg:w-[40%]">
+					<h3 class="heading-asterisk heading-asterisk--section">Advantages</h3>
+					<ul class="list-checkmark mt-4">
+						<li>Cross-Industry Expertise.</li>
+						<li>Data-Driven Decision-Making.</li>
+						<li>Employee Empowerment.</li>
+						<li>Sustainable Practices.</li>
+						<li>Community Engagement.</li>
+						<li>Focus on User Experience (UX).</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="bg-gradient-to-b from-[#0693e3] to-[#9b51e0] px-5 py-16 text-canvas sm:px-8 sm:py-20 lg:px-16 lg:py-28">
+		<div class="mx-auto max-w-3xl text-center">
+			<p class="font-serif text-2xl leading-snug sm:text-3xl lg:text-4xl">At HUBSTER, relationships matter.</p>
+			<p class="mt-6 text-canvas/95">We build long-term partnerships rooted in trust and collaboration, always keeping our clients’ goals at the heart of what we do. Our commitment is to provide solutions that work seamlessly, driving measurable results and helping businesses thrive in an ever-changing digital world.</p>
+		</div>
+	</section>
+
+	<section class="px-5 py-12 sm:px-8 sm:py-16 lg:px-16 lg:py-24">
+		<div class="mx-auto max-w-3xl text-center">
+			<h2 class="heading-asterisk">Our greatest asset is our people</h2>
+			<p class="mt-6">We’re always seeking passionate individuals who share our vision and are<br>eager to contribute to our mission.</p>
+			<p class="mt-4">Our dynamic team of experts-from software developers to project managers–drivers innovation and success.</p>
+			<p class="mt-4">We cultivate a collaborative environment that values creativity and continuous learning, empowering us to tackle complex challenges and deliver exceptional results.</p>
+			<h2 class="mt-10 font-serif text-3xl font-normal text-ink sm:text-4xl lg:text-5xl">Meet our team!</h2>
+		</div>
+	</section>
+
+	<section id="contact-us" class="px-5 py-12 sm:px-8 sm:py-16 lg:px-16 lg:py-24">
+		<div class="mx-auto max-w-3xl rounded-2xl bg-surface px-5 py-10 shadow-sm sm:px-10 sm:py-12">
+			<h2 class="text-center font-serif text-3xl font-normal text-ink sm:text-4xl lg:text-5xl">Your journey starts here!</h2>
+			<p class="mt-4 text-center">Join us as we shape the future of technology together.</p>
+			<form id="contact-form" class="mx-auto mt-8 max-w-xl" novalidate>
+				<p id="contact-form-status" class="mb-4 min-h-6 text-center text-sm text-muted empty:hidden" role="status" aria-live="polite"></p>
+				<div class="mb-4">
+					<label class="sr-only" for="contact-name">Your name</label>
+					<input class="w-full rounded-md border border-line bg-surface px-3 py-2 text-ink placeholder:text-muted/80 focus:border-ink focus:outline-none focus:ring-2 focus:ring-ink/20" type="text" id="contact-name" name="name" autocomplete="name" placeholder="Your name" aria-describedby="contact-name-error">
+					<span id="contact-name-error" class="mt-1 block min-h-5 text-sm text-red-600 empty:hidden" role="alert"></span>
+				</div>
+				<div class="mb-4">
+					<label class="sr-only" for="contact-email">Your email</label>
+					<input class="w-full rounded-md border border-line bg-surface px-3 py-2 text-ink placeholder:text-muted/80 focus:border-ink focus:outline-none focus:ring-2 focus:ring-ink/20" type="email" id="contact-email" name="email" autocomplete="email" placeholder="Your email" aria-describedby="contact-email-error">
+					<span id="contact-email-error" class="mt-1 block min-h-5 text-sm text-red-600 empty:hidden" role="alert"></span>
+				</div>
+				<div class="mb-4">
+					<label class="sr-only" for="contact-message">Your message</label>
+					<textarea class="min-h-32 w-full resize-y rounded-md border border-line bg-surface px-3 py-2 text-ink placeholder:text-muted/80 focus:border-ink focus:outline-none focus:ring-2 focus:ring-ink/20" id="contact-message" name="message" rows="4" placeholder="Your message" aria-describedby="contact-message-error"></textarea>
+					<span id="contact-message-error" class="mt-1 block min-h-5 text-sm text-red-600 empty:hidden" role="alert"></span>
+				</div>
+				<button class="btn-primary" type="submit">Submit</button>
+			</form>
+		</div>
+	</section>
 </main>
 
-
-<footer class="wp-block-template-part">
-<div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">
-<div class="wp-block-columns alignwide is-layout-flex wp-container-core-columns-is-layout-28f84493 wp-block-columns-is-layout-flex">
-<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:30%">
-<div class="wp-block-group is-vertical is-layout-flex wp-container-core-group-is-layout-fe9cc265 wp-block-group-is-layout-flex"><div class="wp-block-site-logo"><a href="/" class="custom-logo-link" rel="home" aria-current="page"><img loading="lazy" width="20" height="20" src="assets/hub_logo02-1.png" class="custom-logo" alt="hubster — IT Services and IT Consulting" decoding="async"></a></div>
-
-
-<p>©2022-2026<br>Hubster Sp. z o.o.<br>10, Zamknieta Str., office 1.5<br>30-554, Krakow, Poland</p>
-</div>
-</div>
-
-
-
-<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:20%"></div>
-
-
-
-<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:50%">
-<div class="wp-block-group is-content-justification-space-between is-layout-flex wp-container-core-group-is-layout-e5edad21 wp-block-group-is-layout-flex">
-<div class="wp-block-group is-vertical is-content-justification-stretch is-layout-flex wp-container-core-group-is-layout-353c4f5a wp-block-group-is-layout-flex">
-<div class="wp-block-group is-vertical is-layout-flex wp-container-core-group-is-layout-ea0cb840 wp-block-group-is-layout-flex"></div>
-</div>
-
-
-
-<div class="wp-block-group is-vertical is-content-justification-stretch is-layout-flex wp-container-core-group-is-layout-353c4f5a wp-block-group-is-layout-flex">
-<div class="wp-block-group is-vertical is-layout-flex wp-container-core-group-is-layout-ea0cb840 wp-block-group-is-layout-flex"></div>
-</div>
-
-
-
-<div class="wp-block-group is-vertical is-content-justification-stretch is-layout-flex wp-container-core-group-is-layout-353c4f5a wp-block-group-is-layout-flex">
-<h2 class="wp-block-heading has-medium-font-size has-body-font-family" style="font-style:normal;font-weight:600">Social</h2>
-
-
-
-<div class="wp-block-group is-vertical is-layout-flex wp-container-core-group-is-layout-ea0cb840 wp-block-group-is-layout-flex"><nav style="font-style:normal;font-weight:400;" class="has-small-font-size  is-vertical wp-block-navigation is-layout-flex wp-container-core-navigation-is-layout-ea0cb840 wp-block-navigation-is-layout-flex" aria-label="Footer navigation"><ul style="font-style:normal;font-weight:400;" class="wp-block-navigation__container has-small-font-size  is-vertical wp-block-navigation has-small-font-size"><li class="has-small-font-size wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://www.linkedin.com/company/hubsterpl/"><span class="wp-block-navigation-item__label">Linkedin</span></a></li></ul></nav></div>
-</div>
-</div>
-</div>
-</div>
-</div>
+<footer class="border-t border-line/40 bg-canvas px-5 py-8 sm:px-8">
+	<div class="mx-auto grid max-w-7xl gap-8 sm:grid-cols-[1fr_auto_1fr] md:grid-cols-[minmax(0,30%)_minmax(0,20%)_minmax(0,50%)] md:items-start md:gap-12">
+		<div>
+			<a href="/" class="mb-4 inline-block leading-none" aria-current="page">
+				<img loading="lazy" src="assets/hub_logo02-1.png" width="20" height="20" alt="hubster — IT Services and IT Consulting" decoding="async" class="h-5 w-5">
+			</a>
+			<p class="m-0 text-sm leading-relaxed text-muted">©2022-2026<br>Hubster Sp. z o.o.<br>10, Zamknieta Str., office 1.5<br>30-554, Krakow, Poland</p>
+		</div>
+		<div class="hidden md:block" aria-hidden="true"></div>
+		<div>
+			<h2 class="m-0 text-base font-semibold text-ink">Social</h2>
+			<nav class="mt-3 text-sm font-normal" aria-label="Footer navigation">
+				<ul class="m-0 list-none p-0">
+					<li><a href="https://www.linkedin.com/company/hubsterpl/" class="text-inherit no-underline hover:underline" rel="noopener noreferrer" target="_blank">Linkedin</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
 </footer>
+
 <script src="main.js" defer></script>
 </body>
 </html>

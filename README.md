@@ -1,18 +1,21 @@
 # hubster static landing
 
-WordPress-free single-page site: open `index.html` in a browser after serving the folder (recommended), or deploy the repository root as a static site.
+Single static page. **Tailwind is compiled ahead of time** into [`styles.css`](styles.css) and that file is **committed**, so deploys and `python3 -m http.server` need **no** Node, no CDN, and no build on the server.
 
-## Local preview
+## Regenerating CSS (when you change markup or `src/input.css`)
 
-From this directory:
+After editing [`index.html`](index.html) (Tailwind classes) or [`src/input.css`](src/input.css) (theme or `@layer` components):
 
 ```bash
-npx --yes serve .
+yarn install
+yarn build:css
 ```
 
-Then open the URL shown in the terminal (for example `http://localhost:3000`).
+Then commit the updated `styles.css`. You only need `yarn install` again when dependencies change.
 
-Alternatively:
+While iterating on styles, you can run `yarn watch:css` in another terminal.
+
+## Local preview
 
 ```bash
 python3 -m http.server 8080
@@ -20,8 +23,8 @@ python3 -m http.server 8080
 
 ## Deploy
 
-Upload or connect the project root (the folder that contains `index.html`, `styles.css`, `main.js`, and `assets/`) to any static host, such as Vercel, Netlify, or Cloudflare Pages. No build step is required.
+Ship the repo root as a static site: `index.html`, `styles.css`, `main.js`, and `assets/`. No install step on the host.
 
 ## Source export
 
-The original saved WordPress page is kept as `hubster — IT Services and IT Consulting.html` for reference. The live site uses only `index.html` and the files linked from it.
+The original WordPress save is kept as `hubster — IT Services and IT Consulting.html` for reference.

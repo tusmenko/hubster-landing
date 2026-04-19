@@ -1,15 +1,13 @@
 (function () {
 	function initNav() {
-		var headerNav = document.querySelector("header .wp-block-navigation");
-		if (!headerNav) return;
-		var openBtn = headerNav.querySelector(".wp-block-navigation__responsive-container-open");
-		var closeBtn = headerNav.querySelector(".wp-block-navigation__responsive-container-close");
-		var panel = headerNav.querySelector(".wp-block-navigation__responsive-container");
+		var openBtn = document.getElementById("nav-menu-open");
+		var closeBtn = document.getElementById("nav-menu-close");
+		var panel = document.getElementById("nav-menu-panel");
 		if (!openBtn || !closeBtn || !panel) return;
 
 		function setOpen(open) {
-			panel.classList.toggle("is-menu-open", open);
-			document.documentElement.classList.toggle("has-modal-open", open);
+			panel.classList.toggle("nav-open", open);
+			document.documentElement.classList.toggle("overflow-hidden", open);
 			openBtn.setAttribute("aria-expanded", String(open));
 			if (open) {
 				closeBtn.focus();
@@ -19,17 +17,17 @@
 		}
 
 		openBtn.addEventListener("click", function () {
-			setOpen(!panel.classList.contains("is-menu-open"));
+			setOpen(!panel.classList.contains("nav-open"));
 		});
 		closeBtn.addEventListener("click", function () {
 			setOpen(false);
 		});
 		document.addEventListener("keydown", function (e) {
-			if (e.key === "Escape" && panel.classList.contains("is-menu-open")) {
+			if (e.key === "Escape" && panel.classList.contains("nav-open")) {
 				setOpen(false);
 			}
 		});
-		headerNav.querySelectorAll('a[href^="#"]').forEach(function (a) {
+		panel.querySelectorAll('a[href^="#"]').forEach(function (a) {
 			a.addEventListener("click", function () {
 				setOpen(false);
 			});
